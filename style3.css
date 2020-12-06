@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body{
+    margin:0;
+    padding: 0;
+    color:#585858;
+}
+
+.login-page{
+    background: url('live-broadcasting-software.jpg') no-repeat 0px 0px;
+    background-size: cover;
+    width: 100%;
+    height:100vh;
+}
+
+.login-page::before{
+    background: url('layer.png');
+    content: '';
+    position: absolute;
+    opacity: 0.8;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+@media(min-width:628px){
+    .content{
+        width: 60%;
+        left: 20%;
+        top: 15%;
+    }
+}
+
+.custom-button{
+    background-color:#d81371;
+    text-decoration: none;
+    direction: ltr;
+    margin: 10px;
+    box-sizing: content-box;
+    justify-content: left;
+    position: relative;
+    text-align: center;
+    text-shadow: none;
+    vertical-align: middle;
+    transition: 200ms cubic-bezier(.08,.52,.52,1)
+    background-color, 200ms cubic-bezier(.08,.52,.52,1)
+    box-shadow, 200ms cubic-bezier(.08,.52,.52,1)transform;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 40px;
+    width: 116px;
+}
